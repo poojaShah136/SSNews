@@ -66,3 +66,31 @@ body {
     transform: rotate(360deg);
   }
 }
+
+
+.loginWrap {
+  background: url(images/bg1.jpg) center/cover no-repeat;
+  
+  height: 100vh;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logo{
+  width:170px
+}
+
+.formLogin{
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+form.formLogin div {
+  width: 100%;
+}

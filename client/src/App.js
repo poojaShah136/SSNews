@@ -6,9 +6,13 @@ import NewsDetails from './components/NewsDetails';
 import AdminPanel from './components/AdminPanel';
 import Login from './components/Login';
 import Registration from './components/Registration';
+import {ThemeProvider} from '@mui/material/styles';
+import { ThemeGenrator } from './components/UI/Theme';
 
 const App = () => {
   return (
+    <ThemeProvider theme={ThemeGenrator}>
+
     <div className="App">
       <Router>
         <Routes>
@@ -20,6 +24,7 @@ const App = () => {
         </Routes>
       </Router>
     </div>
+    </ThemeProvider>
   );
 };
 
