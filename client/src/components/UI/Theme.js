@@ -1,9 +1,11 @@
 import React from 'react';
 import { createTheme } from '@mui/material/styles';
 
-export const ThemeGenrator =() => {
+export const ThemeGenerator = () => {
+  
   return  createTheme({
-
+    cssVarPrefix: '',
+    cssVariables: true,
     palette: {
         common: {            
             gray:'#625b5b',
@@ -16,6 +18,7 @@ export const ThemeGenrator =() => {
           primary: {
             main: '#ea9809',        
             mid: '#df7d17',
+            contrastText:'#fff'
           },
           secondary: {
             main: '#95af0f',

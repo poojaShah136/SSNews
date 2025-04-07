@@ -7,11 +7,14 @@ import AdminPanel from './components/AdminPanel';
 import Login from './components/Login';
 import Registration from './components/Registration';
 import {ThemeProvider} from '@mui/material/styles';
-import { ThemeGenrator } from './components/UI/Theme';
+import { ThemeGenerator } from './components/UI/Theme';
+
+const theme = ThemeGenerator();
 
 const App = () => {
+ 
   return (
-    <ThemeProvider theme={ThemeGenrator}>
+    <ThemeProvider theme={theme}>
 
     <div className="App">
       <Router>

@@ -4,6 +4,12 @@ body {
   padding: 0;
 }
 
+ul,li,ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{text-decoration: none !important;}
 .App {
   text-align: center;
 }
@@ -94,3 +100,6 @@ body {
 form.formLogin div {
   width: 100%;
 }
+
+
+.MuiInputLabel-shrink{font-size: 16px !important; font-weight: 400 !important;}

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Typography } from '@mui/material';
 
-function Para(props) {
+function Para({children,...props}) {
   return (
     <Typography 
     variant={props.variant}
@@ -10,7 +10,7 @@ function Para(props) {
     align={props.align}
     className={props.className}
     color={props.color}
-    id={props.id}>{props.text}</Typography>
+    id={props.id}>{children}</Typography>
   )
 }
 Typography.defaultProps ={
@@ -20,6 +20,7 @@ Typography.defaultProps ={
 
 
 Para.propTypes = {
+  children:PropTypes.any,
     variant: PropTypes.string,
     sx:PropTypes.string,
     align:PropTypes.string,
